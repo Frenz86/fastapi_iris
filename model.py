@@ -1,12 +1,14 @@
+### just to create and test the model pkl
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import joblib
+
+
 # Load dataset
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
-
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-
 dataset = pd.read_csv(filepath_or_buffer=url,header=None,sep=',',names=names)
 # Split-out validation dataset
 array = dataset.values
